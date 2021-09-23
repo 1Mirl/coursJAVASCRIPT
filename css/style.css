@@ -1,0 +1,23 @@
+/*styles pour l'intro au JS*/
+body{
+    background-color: pink;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+.stabilo{
+    background-color: rgb(207, 207, 46);
+}
+.bouton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
