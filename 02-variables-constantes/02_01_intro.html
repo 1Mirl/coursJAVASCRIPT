@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <title>JavaScript - II/01 introduction</title>
+
+    <script src="introduction.js" async></script>
+
   </head>
   <body>
     <div class="text-center container-fluid bg-light m-5 p-5">
@@ -49,6 +52,34 @@
             </div>
         </div>
         <!--fin rangée-->
+    </div>
+    <div class="container">
+        <Section class="row">
+            <h2>différence entre <code>var</code> et <code>let</code></h2>
+            <hr>
+            <div class="col-sm-3 bg-info">
+                <p> <code>let</code> est plus récent et plus contraignant que <code>var</code> </p>
+            </div>
+            <div class="col-sm-3 bg-warning">
+                <h3>A/ La remontée ou hoisting des variables</h3>
+                <p>Avec <code>var</code> on n'est pas obligé de déclarer la variable avant de la manipuler ou l'affecter</p>
+            </div>
+            <div class="col-sm-3 bg-success">
+                <h3>B - La redéclaration des variables</h3>
+                <p>Avec <code>var</code> on avait le droit de déclarer plusieurs fois une même variable en utilisant à chaque fois var (ce qui avait pour effet de modifier la valeur stockée).On ne peut pas le faire avec <code>let</code></p>
+            </div>
+            <div class="col-sm-3 bg-primary">
+                <h3>C/ La "portée" des variables</h3>
+                <p> La "portée" d'une variable désigne l'endroit où cette variable va pouvoir être utilisé dans un script. </p>
+                <p><code>let</code> a une portée locale, alors que <code>var</code> à une portée globale</p>
+                <p>Nous reparlerons donc de cette portée des variables lorsque nous aborderons les fonctions en JavaScript</p>
+            </div>
+            <div class="col-sm-12">
+                <h3>D- Conclusion : <code>let</code> ou <code>var</code> ?</h3>
+                <p>La syntaxe de déclaration des variables avec let correspond à la nouvelle syntaxe. La syntaxe avec <code>var</code> est l’ancienne syntaxe qui est vouée à disparaitre.</p>
+                <p class="stabilo">Vous devriez donc aujourd’hui toujours utiliser le mot clef <code>let</code> pour déclarer vos variables, sachant que c'est un peu contraignant.</p>
+            </div>
+        </Section>
     </div>
     <!--fin div container-->
 
