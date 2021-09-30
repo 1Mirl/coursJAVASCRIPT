@@ -58,7 +58,7 @@ alert(m);
 m = 2;
 console.log(m);
 
-m = 58;
+m = 50;
 console.log(m);
 
 
