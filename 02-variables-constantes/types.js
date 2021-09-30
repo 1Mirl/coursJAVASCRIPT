@@ -1,4 +1,4 @@
-//JS pour la page types
+//JS pour la page types // télécharger W3C
 
 //1 STRING
 
