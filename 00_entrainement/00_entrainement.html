@@ -93,6 +93,7 @@
         //2- TYPES DE DONNEES
         document.write('<h2 style="background: orange;width: 50%; color: #fff;">1-AFFICHAGE</h2>');
 
+        //MINI EXO affichez la phrase suivante dans la page : "Voici une phrase pour Miredi avec une ' est une variable qui contient un string"
         var monTexte = 'Voici une phrase pour Miredi avec une \'';
         document.write('<p>' + monTexte + '</p>');
         console.log(typeof (monTexte));
@@ -103,7 +104,64 @@
         document.write(typeof(monTexte)) + '<br>';
         document.write(typeof(noteEVAL)) + '<br>';
 
-        //MINI EXO affichez la phrase suivante dans la page : "Voici une phrase pour Miredi avec une ' est une variable qui contient un string"
+        //3- CONSTANTES
+        document.write('<h2 style="background: orange;width: 50%; color: white;text-align: center;">3-CONSTANTES</h2>');
+
+        const neBougePas = 'Ma constante impossible à modifier !';
+        let meteo = 'beau temps';
+
+        console.log(meteo);
+
+        meteo = 'mauvais temps';
+
+        console.log(meteo);
+
+        console.log(neBougePas);
+
+        //neBougePas = 'coucou';
+
+        //min exo afficher avec document.write la phrase suivante dans un p fond gris " la constante neBougePas contient "Ma constante impossible à modifier !
+        
+        document.write('<p style="background: lightgrey;"> La constante neBougePas contient "' + neBougePas+ '" </p>');
+
+        //4- CONCATENER
+        document.write('<h2 style="margin:auto; background: orange; width: 80%; color: white; text-align: center;">4- CONCATENER </h2>');
+
+        //MINI exo 2 variables nom, premon et affichez "the name is Bond, James Bond"
+
+        let firstName = 'James';
+        console.log(firstName);
+         
+        let lastName =' James Bond';
+        console.log(lastName);
+        //console.log(firstName, lastName);
+
+        document.write('<p>The name is ' + firstName + ' , '+ lastName +'</p>')
+        
+        //correction
+        firstName = 'James';
+        lastName = ' Bond ';
+        document.write('<p>The name is '+ lastName +' , '+ firstName + ' '+ lastName +'</p>');
+
+        //5- OPERATEUR NUMERIQUE
+        document.write('<h2 style="margin:auto; background: orange; width: 80%; color: white; text-align: center;">5- OPERATEUR NUMERIQUE </h2>');
+
+        let addition = 10 + 5;
+        //affichez : le résultat d'une addition : 15
+        document.write('<p style=text-transform: uppercase;>Le résultat d\'une addition : ' + addition +' </p>');
+        //<p>le résultat d'une addition : 15 </p>
+
+        let multiplication = 10 * 5;
+        document.write('<p>Le résultat d\'une multiplication : ' + multiplication +' </p>');
+
+        let soustraction = 10 - 5;
+        document.write('<p>Le résultat d\'une soustraction: ' + soustraction +' </p>');
+
+        let division = 10 / 3;
+        document.write('<p>Le résultat d\'une division: ' + division +' </p>');
+
+
+        
 
     </script>
 </head>
