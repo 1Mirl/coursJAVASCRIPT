@@ -46,11 +46,11 @@
 
         confirm('Merci de confirmer, svp.');
 
-        prompt('comment allez-vous?');
+        //prompt('comment allez-vous?');
 
         let humeur;
         console.log(humeur);
-        humeur = prompt('comment va ?');
+       // humeur = prompt('comment va ?');
 
         console.log(humeur);
 
@@ -61,7 +61,7 @@
         let prenom;
         console.log(prenom);
 
-        prenom = prompt('comment s\'appelle votre mere?');
+       // prenom = prompt('comment s\'appelle votre mere?');
 
         console.log(prenom);
         document.write('<p>le prenom de votre mere? : '+ prenom + '</p>');
@@ -159,6 +159,52 @@
 
         let division = 10 / 3;
         document.write('<p>Le résultat d\'une division: ' + division +' </p>');
+
+        //modulo
+        //exemple pour l'utilisation du modulo; répondre à la question suivante : j'ai 10 billes je les partage entre 3 personnes il m'en reste combien
+
+        //exo affichez : le modulo de 10 % 3 est 1
+        let modulo = 10 % 3;
+        document.write('<p>Le résultat d\'un modulo: ' + modulo +' </p>');
+        console.log(modulo);
+
+        //EXO
+        document.write('<h3 style="margin:auto; background: orange;width: 60%; color: white; text-align: center;">5- EXO 1 Quel âge avez-vous?</h3>');
+
+        //CONSIGNE réaliser un prompt() demandant son âge à un utilisateur, récupérer cette donnée et l'utilisateur pour afficher "vous avez xx ans"
+
+        let sonAge;
+        console.log(sonAge);
+        sonAge = prompt('Quel âge avez-vous?');
+        document.write('<p>Vous avez ' + sonAge +' ans</p>');
+
+        //Exo 
+        //Consigne
+        //1- récupérer une valeur numérique donnée par un utilisateur
+        //2- récupérer ensuite une alert() indiquant le résultat de cette valeur au carré puis au cube
+        //3- puis on fera un document.write
+
+        let votreChiffre = prompt('quel est votre chiffre ?');
+        console.log(votreChiffre);
+
+        console.log(votreChiffre * votreChiffre * votreChiffre);
+        console.log(votreChiffre **2);
+        document.write('<p>Votre chiffre est ' + votreChiffre +' </p>');
+
+        //autrement:
+        let auCarre = votreChiffre * votreChiffre;
+        //console.log(auCarre);
+
+        let auCube = votreChiffre * votreChiffre * votreChiffre;
+        console.log(auCarre, auCube);
+
+        alert('Vous avez saisi le chiffre : '+ votreChiffre + ' \nce ce chiffre au carré est égal à '+ auCarre +' \nce ce chiffre au cube est égal à : '+
+        auCube);
+
+        document.write('<p>Vous avez saisi le chiffre : '+ votreChiffre + ' <br>ce chiffre au carré est égal à '+ auCarre +' <br>ce chiffre au cube est égal à : '+ auCube + ' </p>');
+        
+
+        
 
 
         
