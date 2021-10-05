@@ -32,3 +32,6 @@ code{
 em{
     background-color: lightblue;
 }
+td p {
+    background-color: lightpink;
+}
