@@ -198,12 +198,49 @@
         let auCube = votreChiffre * votreChiffre * votreChiffre;
         console.log(auCarre, auCube);
 
-        alert('Vous avez saisi le chiffre : '+ votreChiffre + ' \nce ce chiffre au carré est égal à '+ auCarre +' \nce ce chiffre au cube est égal à : '+
+        alert('Vous avez saisi le chiffre : '+ votreChiffre + ' \n ce chiffre au carré est égal à '+ auCarre +' \n ce chiffre au cube est égal à : '+
         auCube);
 
         document.write('<p>Vous avez saisi le chiffre : '+ votreChiffre + ' <br>ce chiffre au carré est égal à '+ auCarre +' <br>ce chiffre au cube est égal à : '+ auCube + ' </p>');
         
+        //6- CONDITIONS
+         document.write('<h2 style="margin:auto; background: orange; width: 80%; color: white; text-align: center;">6- CONDITIONS </h2>');
 
+         let a = 2, b = 5, c = 2;
+         console.log(a,b,c);
+
+         //MIN Exo
+         //Si a est supérieur à b, j'écris "a est supérieur" SINON j'écris "a n'est pas supérieur à b" dans un document write
+
+         //if(a > 3){
+             //alert('IF a contient ' + a + ' et cette valeur est supérieur à '+ b +'');
+         //}else{
+            //alert('ELSE a contient ' + a + ' et cette valeur est inférieur à '+ b +'');
+         //}
+         if(a > b){
+            document.write('<p>a = '+ a +' est supérieu à b = '+ b +'</p>');
+         }else{
+            document.write('<p>a = '+ a +' n\'est pas supérieur à b = '+ b +'</p>');
+         }
+
+         //MINI Exo
+         //tester l'égalité de a et b
+         //et montrer ce test dans un document (en afffichant de a et b)
+
+         if(a == b){
+            document.write('<p>Pour a qui vaut '+ a +' et b qui vaut = '+ b +' : a est égal à b.</p>');
+         }else{
+            document.write('<p>Pour a qui vaut '+ a +' et b qui vaut  = '+ b +' : a n\'est pas égal à b.</p>');
+         }
+
+         //EXO tester si cette condition est remplie : a et b sont-ils égaux en valeur et en types?
+
+         if(a === b){
+            document.write('<p>Pour a qui vaut '+ a +' et b qui vaut = '+ b +' : a et b sont égaux en valeur et en type.</p>');
+         }else{
+            document.write('<p>Pour a qui vaut '+ a +' et b qui vaut  = '+ b +' : a et b ne sont pas égaux en valeur et en type.</p>');
+         }
+         
         
 
 

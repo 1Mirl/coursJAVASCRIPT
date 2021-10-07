@@ -28,7 +28,11 @@ if(NaN){
     alert('5/ true /// vrai');
 }
 //6e 
-if((x > 1) == false){
-    //si c'est bien faux le code s'exécute
+if((x > 1) == false){ //si le résultat du test est faux ... ((false) == false)
+    //... le code s'execute
     alert('6/ x qui contient ' + x + ' est supérieur à 1');
+}
+//7e 
+if((x == y) == false){
+    alert('7/ x et y ne contiennent pas la même valeur');
 }
