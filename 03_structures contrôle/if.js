@@ -27,3 +27,8 @@ let chaine = '';
 if(NaN){
     alert('5/ true /// vrai');
 }
+//6e 
+if((x > 1) == false){
+    //si c'est bien faux le code s'exécute
+    alert('6/ x qui contient ' + x + ' est supérieur à 1');
+}
