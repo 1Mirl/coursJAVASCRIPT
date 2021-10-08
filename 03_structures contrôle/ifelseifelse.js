@@ -14,7 +14,7 @@ if(x > 1){//si c'est
 }
 
 x = -10;
-console.log();
+console.log(x);
 
 if(x > 1){
     alert('1/ x contient une valeur strictement supérieur à 1');
