@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,8 +47,37 @@
        console.log(flt);
        console.log(num, txt, bin, flt);
 
-       //affichez dans des console.log
+       //EXO 3
+       //num2 qui contient le nombre 23
+       //txt qui contient la chaîne de caractére 33
+       //affichez le résultat de txt2 + num2 avec console.log
+       //affichez le résultat de num2 + txt2 avec console.log
+
+       let num2 = 23;
+       let txt2 = '33';
+       console.log(num2, txt2);
+
+       console.log(num2 + txt2);
+       //on ne PEUT PAS addittionner une string et un number
+
+       //1 On ne peut faire des opérations avec des variables de types différents
+       //2 Si on veut le faire il faut écrire des conversions dans le programme
+       //3 JS est un langage "typé" 
     
+      //EXO 4
+      let nbr1 = 22;
+      let lettres = '18';
+
+      console.log(typeof nbr1, nbr1);
+      console.log(typeof lettres, lettres);
+
+      //console.log(nbr1 + parseInt(lettres));
+      //nouvelle variable de type number initialisée à 0 elle va me servir à changer un string en number
+      let transformeEnNombre = 0;
+      console.log(transformeEnNombre);
+
+      transformeEnNombre = parseInt(lettres);// parse = analyser INT = integer(entier)
+      console.log(nbr1 + transformeEnNombre);
         
 
 
