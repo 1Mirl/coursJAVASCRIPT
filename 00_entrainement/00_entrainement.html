@@ -292,28 +292,50 @@
             document.write('<p>Ah ! Tiens, vous n\'aimez ni le vert, ni le bleu, ni le rouge, ni le parme ! Vous aimez le '+ choixCouleur +'.</p>');
          }
 
+         document.write('<hr>');
          //puis la même chose avec switch pour lundi matin
 
-         let choixCouleur = bleu;
+         //let choixCouleur = bleu;
          //choixCouleur =  vert ? ou bleu ? ou rouge ? ou parme ?
 
-         switch(choixCouleur){
-            case vert:
-               document.write = 'choixCouleur contient la valeur vert';
-               break;
-            case bleu:
-               document.write = 'choixCouleur contient la valeur bleu';
-               break;
-            case rouge:
-               document.write = 'choixCouleur contient la valeur rouge';
-               break;
-            case parme:
-               document.write = 'choixCouleur contient la valeur parme';
-               break;
-            default:
-            document.write = 'choixCouleur ne contient ni vert, ni rouge, ni bleu, ni parme !!!';
+         //switch(choixCouleur){
+           // case vert:
+               //document.write = 'choixCouleur contient la valeur vert';
+             //  break;
+         
+        //FOR EXO 1
+        //Pour une variable for1 inférieur ou égal à 10 bouclez et incrémentez
+        for (let for1= 0; for1 <= 10; for1++){
+         console.log(for1);
+         document.write('La variable for1 contient '+ for1 +' à chaque tour de boucle <br>');
+        }
+
+        document.write('<hr>');
+        //FOR EXO 2
+        //Pour une variable for2 inférieur ou égal à 10 bouclez et incrémentez
+        //Suite exo 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
+        
+        for (let for2= 0; for2 <= 10; for2++) {
+            //console.log(for2);
+            if (for2 == 10) {
+            document.write('Et la boucle se termine là car for2 arrive à '+ for2);
+            } else {
+               document.write('La variable for2 contient '+ for2 +' <br>');
+            }
          }
-              
+         document.write('<hr>');
+
+         for (let for3= 0; for3 <= 10; for3++) {
+            //console.log(for2);
+            if (for3 < 10) {
+            document.write('for3 contient '+ for3 +'<br>');
+            } else {
+               document.write('et la boucle se termine là car for3 arrive à'+ for3);
+            }//fin du else
+         }//fin du for
+
+
+        
 
 
 
