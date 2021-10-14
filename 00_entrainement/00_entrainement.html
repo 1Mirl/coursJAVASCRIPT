@@ -334,6 +334,31 @@
             }//fin du else
          }//fin du for
 
+         document.write('<hr>');
+
+         //8- FONCTIONS PREDEFINIE ET UTILISATEUR
+         document.write('<h2 style="margin:auto; background: orange; width: 80%; color: #fff; text-align: center;">8- FONCTIONS PREDEFINIE ET UTILISATEUR</h3>');
+
+         var phrase1 = 'Vive les frites !';
+         var phrase2 = 'silence !!! svp';
+         console.log(phrase1,phrase2);
+
+         //toUppercase et toLowerCase
+         console.log(phrase1.toUpperCase());
+
+         document.write('<p>Cette phrase en majuscule : ' + phrase1.toUpperCase() + '</p>');
+         document.write('<p>Cette phrase en muniscule : ' + phrase1.toUpperCase() + '</p>');
+
+         //Une fonction prédéfinies TRES importante length
+         //cette fonction compte les caractères d'une string les espaces et les lettres etc.
+         var phrase3 = 'The name is Bond. James Bond';
+         console.log(phrase3.length);
+         document.write('<p>Test ; dans la phrase suivante '+ phrase3 +' il y a '+ phrase3.length + ' caractères.</p>');
+
+         function beauTemps() {
+            return document.write('<p>Il fait beau </p>');
+         }
+         beauTemps();
 
         
 
