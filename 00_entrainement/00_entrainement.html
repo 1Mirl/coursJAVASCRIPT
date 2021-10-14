@@ -360,6 +360,63 @@
          }
          beauTemps();
 
+         //function coucou() {
+         //   return alert('Coucou les amis !');
+         //}
+         //coucou();
+
+         function direBonjour(prenom) {
+            var message = document.write('<p> Bonjour ' + prenom + '. Comment vas-tu ?</p>');
+               return message;
+         }
+         direBonjour('Toto');
+
+         function uneLigne() {
+            return document.write('<hr>');
+         }
+         uneLigne();
+
+         //promt() et une fonction
+         let prenom2 = prompt('Quel est votre prénom ?');
+         console.log(prenom2);
+          
+         function direBonjour2(prenom2) {
+            message2 = document.write('<p>Bonjour '+ prenom2 +'. Bienvenue sur notre site.</p>');
+               return message2
+         }
+         direBonjour(prenom2);
+
+         //EXO
+         //1 demandez "quelle est la saison ?" et "quelle est la température extérieure ?"
+         //2 faite une fonction meteo() qui renvoie les réponse à ces deux questions
+
+         let saison = prompt('quelle est la saison ?');
+         let temperature = prompt('quelle est la température extérieure ?');
+         console.log(temperature, saison);
+         
+
+         function questionMeteo(saison, temperature) {
+           var message3 = document.write('<p>Bonjour, nous sommes en '+ saison +' et la température est de '+ temperature +' .</p>');
+               return message3
+         }
+         questionMeteo(saison, temperature);
+
+         //EXO 
+         //faites un if else avec deux types de phrases si c'est printemps = "nous sommes au printemps" si c'est l'une des 3 autres saison il faut écrire "nous sommes en"
+
+            let saison2 = prompt('quel temps il fait');
+            console.log(saison2);
+
+            if ('printemps') {
+            document.write('nous sommes au printemps ');
+            } else {
+               document.write('nous sommes en '+ saison2 +'');
+            }
+         
+
+
+
+
         
 
 
