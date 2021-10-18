@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <title>JavaScript - VI- 06/01- introduction</title>
+    <!-- <script src="intro.js"></script> -->
 </head>
 <body>
     <!-- =================================== -->
@@ -31,10 +32,26 @@
     <!-- =========================== -->
     <div class="container p-4">
         <section class="row mt-4">
-            <h2>1- </h2>
+            <h2 id="titreN2">Ce titre sera selectionné dans la console (avec querySelector) </h2>
+            <hr>
+            <!-- EXO -->
+            <h2 id="aChanger">Ce titre va changer </h2> 
+            <hr>
+
+            <div class="col-3">
+                <p class="ma-classe">Paragraphe 1</p>
+            </div>
+            <div class="col-3">
+                <p class="ma-classe">Paragraphe 2</p>
+            </div>
+            <div class="col-3">
+                <p class="">Paragraphe 3</p>
+            </div>
+            <div class="col-3">
+                <p class="">Encore un p</p>
+            </div>
         </section>
 
-        <script src="intro.js"></script>
         <script>
             //coucou();
 
@@ -45,8 +62,48 @@
             //console.log(select2);
             
             //3- avec getElementById directement avec un sélecteur
-            var seclect3 = document.getElementById('titreN1');
+            var select3 = document.getElementById('titreN1');
             console.log(select3);
+
+            //4- avec getElementsByClassName
+            //je cherche tous les éléments qui ont cette classe
+            var selectClass = document.getElementsByClassName('ma-classe');
+            console.log(selectClass);
+
+                //avec l'indice du tableau je selectionne le second (indice 1) des éléments qui ont la classe ma-classe
+                console.log(selectClass[1]);
+
+                selectClass[1].innerHTML = 'Et là je change le contenu de ce paragraphe...';
+
+                //mini EXO modifiez le contenu de h2 #aChanger
+                //Et mettre le texte suivant Youpi j'ai changé le titre h2
+                var select4 = document.getElementById('aChanger');
+                console.log(select4);
+                select4.innerHTML = '2- Youpi j\'ai changé le titre h2';
+
+            //5- avec getElementsByTagName
+            var selectP = document.getElementsByTagName('p');
+            console.log(selectP);
+            //console.log(selectP.length);
+
+            selectP[0].style.backgroundColor = "pink";
+            selectP[0].style.fontVariant = "small-caps"
+            selectP[0].style.color ="white";
+            selectP[0].style.borderRadius = "80px";
+
+            //les mots clefs à appliquer avec .style
+            // https://www.w3schools.com/jsref/dom_obj_style.asp
+
+            select3.style.backgroundColor = "olive";
+
+            //on va maintenant changer un paramètre de style de tous les p
+
+            console.info(selectP);
+            console.log(selectP.length);
+            for (var i = 0; i < selectP.length ; i++ ){
+                select[i].style.backgroundColor = "black";
+                select[i].style.color = "white";
+            }
         </script>
 </body>
 </html>
