@@ -23,7 +23,7 @@
     <!-- en-tête -->
     <!-- =================================== -->
     <div class="container-fluid bg-info p-5 text-center">
-        <h1 class="display-4">JavaScript - VI/01- Sélecteurs <i class="bi bi-markdown-fill"></i></h1>
+        <h1 id="titreN1" class="display-4">JavaScript - VI/01- Sélecteurs <i class="bi bi-markdown-fill"></i></h1>
         <p class="lead">Les Sélecteurs en JS </p>
     </div>
 
@@ -100,10 +100,19 @@
 
             console.info(selectP);
             console.log(selectP.length);
+
             for (var i = 0; i < selectP.length ; i++ ){
-                select[i].style.backgroundColor = "black";
-                select[i].style.color = "white";
+                selectP[i].style.color = "purple";
+                selectP[i].style.borderRadius = "50px";
             }
+
+            //on va maintenant ajouter un style qui vient des feuilles de style de la page
+
+            selectP[0].classList.add('bg-success');
+            selectP[0].classList.add('m-4');
+
+            //selectP[1].classList.add('bg-warning');
+
         </script>
 </body>
 </html>
