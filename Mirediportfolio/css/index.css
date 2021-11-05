@@ -1,2 +1,14 @@
 /* page pour index.html */
 /* cf.https://getbootstrap.com/docs/5.1/components/card/ */
+
+body{
+    background-color: skyblue;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+main{
+    background-color: pink;
+}
+a{
+    text-decoration: none;
+}
