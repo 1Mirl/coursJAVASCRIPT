@@ -1,0 +1,16 @@
+header p{
+    background-color: #061339;
+}
+#header{
+    background-image: url(../img/background.jpg);
+    height: 150px;
+}
+#bleu{
+    background-color: #061339; 
+}
+footer {
+    background-color: #dedede;
+}
+footer img {
+    background-color: blue;
+}
